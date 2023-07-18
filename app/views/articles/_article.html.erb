@@ -1,0 +1,22 @@
+<div id="<%= dom_id article %>">
+  <p>
+    <strong>Descripcion:</strong>
+    <%= article.descripcion %>
+  </p>
+
+  <p>
+    <strong>Fecha:</strong>
+    <%= article.fecha %>
+  </p>
+
+  <p>
+    <strong>Lugar:</strong>
+    <%= article.lugar %>
+  </p>
+
+  <p>
+    <strong>Foto:</strong>
+    <%= link_to article.foto.filename, article.foto if article.foto.attached? %>
+  </p>
+
+</div>
