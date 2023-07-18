@@ -68,3 +68,12 @@ class ArticlesController < ApplicationController
       params.require(:article).permit(:descripcion, :fecha, :lugar, :foto)
     end
 end
+def show
+  @article = Article.find(params[:id])
+  @comment = Comment.new
+end
+
+def show
+  @comment = Comment.new
+  @comments = @article.comments
+  end
