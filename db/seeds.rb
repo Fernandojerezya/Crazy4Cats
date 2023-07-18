@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+until Article.count == 50 do
+    Article.create(title: Faker::Book.title, description:
+    Faker::Lorem.paragraph_by_chars(number: 200, supplemental: false), when_went:
+    Faker::Date.between(from: 10.years.ago, to: Date.today),
