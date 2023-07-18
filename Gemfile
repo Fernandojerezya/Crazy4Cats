@@ -73,3 +73,4 @@ end
 gem 'devise'
 #Gemfile
 gem 'faker'
+gem "tailwindcss-rails", "~> 2.0"
